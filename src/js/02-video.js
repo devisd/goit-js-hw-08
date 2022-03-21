@@ -6,7 +6,7 @@ const iframe = document.querySelector('iframe');
 const player = new Vimeo.Player(iframe);
 
 // колбэк-фукция записи значания времени воспроизведения в локальное хранилище
-const onPlay = function(data) {
+function onPlay(data) {
     localStorage.setItem('videoplayer-current-time', JSON.stringify(data));
 };
 
